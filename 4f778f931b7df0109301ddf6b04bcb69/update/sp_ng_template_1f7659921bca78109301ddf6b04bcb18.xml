@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_ng_template">
+    <sp_ng_template action="INSERT_OR_UPDATE">
+        <id>auction-card</id>
+        <sp_widget display_value="Auction list">a0355d521bca78109301ddf6b04bcb7d</sp_widget>
+        <sys_class_name>sp_ng_template</sys_class_name>
+        <sys_created_by>chuck.tomasi</sys_created_by>
+        <sys_created_on>2021-08-20 15:42:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1f7659921bca78109301ddf6b04bcb18</sys_id>
+        <sys_mod_count>66</sys_mod_count>
+        <sys_name>auction-card</sys_name>
+        <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
+        <sys_update_name>sp_ng_template_1f7659921bca78109301ddf6b04bcb18</sys_update_name>
+        <sys_updated_by>chuck.tomasi</sys_updated_by>
+        <sys_updated_on>2021-08-31 21:52:35</sys_updated_on>
+        <template><![CDATA[<style>
+  .lCard {
+    border : 1pt solid #9debb2;
+    border-radius : 5px;
+    margin : 10px;
+    padding : 10px;
+    background-color: #fff;
+  }
+  .lCard:hover {
+    background : #dff7e5;
+  }
+  .listingName {
+    font-size :1.5em;
+    font-weight : bold;
+  }
+  .listingImage {
+    max-height : 150px;
+    max-width : 150px;
+  }
+
+  .bidForm {
+    border : #69bfd0 solid 1pt;
+    background-color : #dff4f7;
+    border-radius : 5px;
+    margin : 10px;
+    padding : 10px;
+    color : #0373a6;
+  }
+
+</style>
+<div class="col-sm-12 lCard">
+  <div class="danger row" ng-if="item.bid.outbid">
+    <span ng-click="hideOutbid($index)">
+      <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+    </span>
+    You have been outbid on this item
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-3">
+      <img class="listingImage" src="{{item.image}}.iix" />
+    </div>
+    <div class="col-md-9 listingName">{{item.name}}</div>
+		<div ng-if="item.provided_by != ''">
+      Provided by: {{item.provided_by}}
+    </div>
+    <div ng-bind-html="item.description">
+    </div>
+    <div ng-if="c.data.event.active">
+      <button class="btn btn-primary" ng-click="toggleBid($index)">
+        Bid
+      </button>
+    </div>
+  </div>
+
+  <div class="row bidForm" ng-if="item.bid.display">
+    <div class="">
+      Current price: ${{item.current_price}}
+    </div>
+    <div class="" ng-if="!c.data.event.silent">
+      Highest bidder:
+      {{item.highest_bidder.name}}
+    </div>
+    <div class="" ng-if="c.data.event.silent">
+      &nbsp;
+    </div>
+    <div class="">
+      Minimum next bid: ${{item.next_bid}}
+    </div>
+    <form>
+      <input type="number"
+             placeholder="Enter bid amount"
+             ng-model="c.data.listing.list[$index].bid.amount">
+      <button class="btn btn-info" ng-click="makeBid(item, $index)">
+        Submit
+      </button>
+    </form>
+  </div> <!-- bidForm -->
+</div> <!-- lCard -->]]></template>
+    </sp_ng_template>
+</record_update>

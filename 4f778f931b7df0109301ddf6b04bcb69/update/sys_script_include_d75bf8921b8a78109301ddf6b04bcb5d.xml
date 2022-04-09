@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_auction.Bid</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Bid</name>
+        <script><![CDATA[var Bid = Class.create();
+Bid.prototype = {
+	initialize: function() {
+	},
+
+	/* Make a bid on the object
+	 *
+	 * param obj - bidding object
+	 *      userID - sys_id of sys_user record
+	 *      listingID - sys_id of the listingID
+	 *      amount - integer
+	 *
+	 * returns obj
+	 *      status - integer (see Constants)
+	 *      msg - displayed to user 
+	 *
+	 */
+	makeBid : function(obj) {
+
+		var answer = {
+			"status" : 99,
+			"msg" : "no message"
+		};
+
+		var listingGr = new GlideRecord(Constants.LISTING_TABLE);
+		listingGr.get(obj.listingID);
+		var currentPrice = parseInt(listingGr.getValue('current_price'), 10);
+		var min = parseInt(listingGr.getValue('minimum_bid'), 10);
+
+		// Check if the amount is below the current price.
+		
+		if (obj.amount <= currentPrice) {
+			
+			answer.status = Constants.BID_BELOW_CURRENT;
+			answer.msg = "Your bid was too low. The current price is " + currentPrice;
+			if (min > 1) {
+				var nextBid = currentPrice + min;
+				answer.msg += " and the minimum bid is " + min +
+					". Please bid at least " + nextBid;
+			}
+			
+			return answer;
+			
+		}
+
+		if (!this.bidAboveMinimum(listingGr, obj.amount)) {
+						
+			answer.status = Constants.BID_BELOW_MIN;
+			answer.msg = "Bid did not meet minimum bid. Please bid at least " +
+				min + " over current price (" + currentPrice + ")";
+			
+			return answer;
+		}
+		
+		// Looks good, save the bid
+		
+		var bidGr = new GlideRecord(Constants.BID_TABLE);
+		bidGr.newRecord();
+		bidGr.setValue('bidder', obj.userID);
+		bidGr.setValue('listing', obj.listingID);
+		bidGr.setValue('bid', obj.amount);
+		bidGr.insert();
+
+		answer.status = Constants.BID_OK;
+		answer.msg = "Bid of " + obj.amount + " placed. Thank you!";
+		
+		return answer;
+
+	},
+
+	/*
+	 * check if the amount bid on the listing was at or above minimum
+	 *
+	 * @param listingID - sys_id of listing table rec
+	 * @param amount - integer (amount bid by user)
+	 *
+	 * @return boolean
+	 *
+	 */
+	bidAboveMinimum : function(listingGr, bidAmount) {
+
+		var answer = false;
+		
+		// Get minimum bid amount and current price
+		var min = parseInt(listingGr.getValue('minimum_bid'), 10);
+		var currentPrice = parseInt(listingGr.getValue('current_price'), 10);
+		
+		
+		if (parseInt(bidAmount, 10) >= currentPrice + min) {
+			answer = true;
+		}
+		
+		return answer;
+	},
+
+	type: 'Bid'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>chuck.tomasi</sys_created_by>
+        <sys_created_on>2021-08-20 13:53:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d75bf8921b8a78109301ddf6b04bcb5d</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Bid</sys_name>
+        <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
+        <sys_update_name>sys_script_include_d75bf8921b8a78109301ddf6b04bcb5d</sys_update_name>
+        <sys_updated_by>chuck.tomasi</sys_updated_by>
+        <sys_updated_on>2021-08-20 14:51:43</sys_updated_on>
+    </sys_script_include>
+</record_update>

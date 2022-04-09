@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope, $http, $location,
+												 spUtil, $document) {
+	/* widget controller */
+	var c = this;
+
+
+	$document[0].title = c.data.event.name;
+/*
+	if (!c.data.event.active) {
+		spUtil.addErrorMessage('This auction is currently closed');
+	}
+*/
+	var myEventQuery = "event=" + c.data.event.id;
+	console.log(myEventQuery);
+
+	// RECORD WATCH STUFF
+
+	spUtil.recordWatch($scope, "x_snc_auction_listing", myEventQuery, function(name) {
+		// Check to see if one of ours was outbid
+		// console.log('name=' + JSON.stringify(name, null, 4));
+		// console.log('data.listing.list=' + JSON.stringify(c.data.listing.list, null, 4));
+		var updateID = name.data.sys_id;
+		var bidderChanged = false;
+		for (var b = 0; b < name.data.changes.length; b++) {
+			if (name.data.changes[b] == 'highest_bidder') {
+				bidderChanged = true;
+			}
+		}
+
+		// Check if this user was outbid
+		if (bidderChanged) {
+
+			for (var i = 0; i < c.data.listing.count; i++) {
+				var item = c.data.listing.list[i];
+				var oldBidder = item.highest_bidder.id;
+				// var newBidder = name.data.
+
+				// If this user WAS the highest bidder
+				// and this is the item was updated
+				// and this user is NOT the new highest bidder
+				// Turn on the 'outbid' message
+				if (item.highest_bidder.id == c.data.user.id &&
+						item.id == updateID &&
+						name.data.record.highest_bidder.value != c.data.user.id) {
+					c.data.listing.list[i].bid.outbid = true;
+					// spUtil.addInfoMessage("You've been outbid on " + item.name);
+				}
+			}
+		}
+		c.server.update();		
+	});
+
+	spUtil.recordWatch($scope, "x_snc_auction_event", "activeVALCHANGES", function(name) {
+		// console.log('name=' + JSON.stringify(name, null, 4));
+		c.server.update();
+	});
+
+
+	// EVENT HANDLERS
+
+	$scope.toggleBid = function(index) {
+		// console.log('Time to make a bid');
+		c.data.listing.list[index].bid.display = !c.data.listing.list[index].bid.display;
+	}
+
+	$scope.makeBid = function(item, index) {
+		// console.log('Submit and hide');
+
+		var obj = {
+			"userID" : c.data.user.id,
+			"listingID" : c.data.listing.list[index].id,
+			"amount" : c.data.listing.list[index].bid.amount
+		};
+
+		// console.log('obj=' + JSON.stringify(obj, null, 4));
+
+		$http({
+			method  : "POST",
+			url     : "/api/x_snc_auction/auction/bid",
+			headers : {"Content-type" : "application/json"},
+			data    : obj
+		}).then(function success(response) {
+			console.log('response=\n' + JSON.stringify(response, null, 4));
+			spUtil.addTrivialMessage(response.data.result.answer.msg);
+			c.data.listing.list[index].bid.display = false;
+			c.data.listing.list[index].bid.outbid = false;
+		}, function failure(response) {
+			// console.log('response=' + JSON.stringify(response, null, 4));
+			console.log('response=\n' + JSON.stringify(response, null, 4));
+			var msg = response.data.result.answer.msg;
+			spUtil.addErrorMessage(msg);
+		});
+	}
+
+	$scope.hideOutbid = function(index) {
+		c.data.listing.list[index].bid.outbid = false;
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.header {
+  text-align : center;
+  font-size : 2em;
+  background-color : #9debb2;
+}
+
+.danger {
+  background-color : #ffd9da;
+  color: #72332c;
+  border : #72332c solid 1pt;
+  border-radius : 5px;
+  margin : 5px;
+  padding : 5px;
+  font-size : 1.5em;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>auction_list</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Auction list</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	data.user = {
+		"id" : gs.getUserID()
+	};
+	data.debug = $sp.getParameter('debug') == "true";
+	
+	var eventID = $sp.getParameter('event');
+	if (!eventID) {
+		gs.addErrorMessage('No event specified in URL');
+		return;
+	}
+		
+	data.event = new Event().getEventObj(eventID);
+	data.listing = new Listing().getListings('event=' + eventID + '^active=true');
+
+	// Preserve bid structure
+	if (input) {
+		for (var i = 0; i < input.listing.count; i++) {
+			data.listing.list[i].bid = input.listing.list[i].bid;
+		}
+	}
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>chuck.tomasi</sys_created_by>
+        <sys_created_on>2021-08-20 15:36:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a0355d521bca78109301ddf6b04bcb7d</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_name>Auction list</sys_name>
+        <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
+        <sys_update_name>sp_widget_a0355d521bca78109301ddf6b04bcb7d</sys_update_name>
+        <sys_updated_by>chuck.tomasi</sys_updated_by>
+        <sys_updated_on>2021-09-09 16:22:04</sys_updated_on>
+        <template><![CDATA[<div>
+  <!-- your widget template -->
+  
+  <div class="header">
+    {{c.data.event.name}}
+  </div>
+  <div class="danger" ng-if="!c.data.event.active">
+    This auction is currently closed
+  </div>
+  <div ng-repeat="item in data.listing.list"
+       ng-include="'auction-card'">
+  </div>
+
+  <div ng-if="c.data.debug">
+    <pre>
+  Event:
+  {{c.data.event | json}}
+  </pre>
+
+    <pre>
+   Listing:
+  {{c.data.listing | json}}
+  </pre>
+
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

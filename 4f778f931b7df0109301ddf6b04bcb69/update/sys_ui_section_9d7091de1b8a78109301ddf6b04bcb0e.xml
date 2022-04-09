@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="9d7091de1b8a78109301ddf6b04bcb0e" sys_domain="global" table="x_snc_auction_event" version="3" view="">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>chuck.tomasi</sys_created_by>
+            <sys_created_on>2021-08-20 15:18:57</sys_created_on>
+            <sys_id>1e41d9de1b8a78109301ddf6b04bcb32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>chuck.tomasi</sys_updated_by>
+            <sys_updated_on>2021-08-20 15:18:57</sys_updated_on>
+            <text>Deactivating the event 'closes' the bidding on all listings.</text>
+            <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
+        </sys_ui_annotation>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>1e41d9de1b8a78109301ddf6b04bcb32</element>
+            <position>0</position>
+            <sys_created_by>chuck.tomasi</sys_created_by>
+            <sys_created_on>2021-08-20 15:18:57</sys_created_on>
+            <sys_id>1641d9de1b8a78109301ddf6b04bcb37</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_auction_event" sys_domain="global" view="Default view">9d7091de1b8a78109301ddf6b04bcb0e</sys_ui_section>
+            <sys_updated_by>chuck.tomasi</sys_updated_by>
+            <sys_updated_on>2021-08-20 15:18:57</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>1</position>
+            <sys_created_by>chuck.tomasi</sys_created_by>
+            <sys_created_on>2021-08-20 15:18:57</sys_created_on>
+            <sys_id>9a41d9de1b8a78109301ddf6b04bcb37</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_auction_event" sys_domain="global" view="Default view">9d7091de1b8a78109301ddf6b04bcb0e</sys_ui_section>
+            <sys_updated_by>chuck.tomasi</sys_updated_by>
+            <sys_updated_on>2021-08-20 15:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>2</position>
+            <sys_created_by>chuck.tomasi</sys_created_by>
+            <sys_created_on>2021-08-20 15:18:57</sys_created_on>
+            <sys_id>1241d9de1b8a78109301ddf6b04bcb38</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_auction_event" sys_domain="global" view="Default view">9d7091de1b8a78109301ddf6b04bcb0e</sys_ui_section>
+            <sys_updated_by>chuck.tomasi</sys_updated_by>
+            <sys_updated_on>2021-08-20 15:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>3</position>
+            <sys_created_by>chuck.tomasi</sys_created_by>
+            <sys_created_on>2021-08-20 15:18:57</sys_created_on>
+            <sys_id>9641d9de1b8a78109301ddf6b04bcb38</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_auction_event" sys_domain="global" view="Default view">9d7091de1b8a78109301ddf6b04bcb0e</sys_ui_section>
+            <sys_updated_by>chuck.tomasi</sys_updated_by>
+            <sys_updated_on>2021-08-20 15:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>chuck.tomasi</sys_created_by>
+            <sys_created_on>2021-08-20 15:18:57</sys_created_on>
+            <sys_id>1e41d9de1b8a78109301ddf6b04bcb38</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_auction_event" sys_domain="global" view="Default view">9d7091de1b8a78109301ddf6b04bcb0e</sys_ui_section>
+            <sys_updated_by>chuck.tomasi</sys_updated_by>
+            <sys_updated_on>2021-08-20 15:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date</element>
+            <position>5</position>
+            <sys_created_by>chuck.tomasi</sys_created_by>
+            <sys_created_on>2021-08-20 15:18:57</sys_created_on>
+            <sys_id>9241d9de1b8a78109301ddf6b04bcb39</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_auction_event" sys_domain="global" view="Default view">9d7091de1b8a78109301ddf6b04bcb0e</sys_ui_section>
+            <sys_updated_by>chuck.tomasi</sys_updated_by>
+            <sys_updated_on>2021-08-20 15:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>blind_auction</element>
+            <position>6</position>
+            <sys_created_by>chuck.tomasi</sys_created_by>
+            <sys_created_on>2021-08-20 23:33:50</sys_created_on>
+            <sys_id>63824b9a1b8e78109301ddf6b04bcbca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_auction_event" sys_domain="global" view="Default view">9d7091de1b8a78109301ddf6b04bcb0e</sys_ui_section>
+            <sys_updated_by>chuck.tomasi</sys_updated_by>
+            <sys_updated_on>2021-08-20 23:33:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>silent</element>
+            <position>7</position>
+            <sys_created_by>chuck.tomasi</sys_created_by>
+            <sys_created_on>2021-08-20 23:38:27</sys_created_on>
+            <sys_id>079347da1b8e78109301ddf6b04bcb2c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_auction_event" sys_domain="global" view="Default view">9d7091de1b8a78109301ddf6b04bcb0e</sys_ui_section>
+            <sys_updated_by>chuck.tomasi</sys_updated_by>
+            <sys_updated_on>2021-08-20 23:38:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_snc_auction_event</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>chuck.tomasi</sys_created_by>
+            <sys_created_on>2021-08-20 15:15:21</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9d7091de1b8a78109301ddf6b04bcb0e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_auction_event</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
+            <sys_update_name>sys_ui_section_9d7091de1b8a78109301ddf6b04bcb0e</sys_update_name>
+            <sys_updated_by>chuck.tomasi</sys_updated_by>
+            <sys_updated_on>2021-08-20 15:15:21</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

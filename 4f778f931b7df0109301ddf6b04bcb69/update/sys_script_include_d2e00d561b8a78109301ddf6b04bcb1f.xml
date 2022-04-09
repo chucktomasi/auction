@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_auction.Listing</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Listing</name>
+        <script><![CDATA[var Listing = Class.create();
+Listing.prototype = {
+	initialize: function() {
+	},
+
+	makeListingObj : function(listingID) {
+
+		var listingGr = new GlideRecord(Constants.LISTING_TABLE);
+		if (!listingGr.get(listingID)) {
+			return {"id" : -1};
+		}
+
+		var obj = {
+			"name"           : listingGr.getValue('name'),
+			"id"             : listingGr.getUniqueValue(),
+			"highest_bidder" : {
+				"id"   : listingGr.getValue('highest_bidder'),
+				"name" : listingGr.highest_bidder.getDisplayValue()
+			},
+			"active"         : listingGr.getValue('active') == "1",
+			"base_price"     : parseInt(listingGr.getValue('base_price'), 10),
+			"minimum_bid"    : parseInt(listingGr.getValue('minimum_bid'), 10),
+			"current_price"  : parseInt(listingGr.getValue('current_price'), 10),
+			"image"          : listingGr.getValue('image'),
+			"description"    : listingGr.getValue('description'),
+			"provided_by"    : listingGr.getValue('provided_by'),
+			"bid" : {  /* used to bind form data for each item */
+				"amount"   : null,
+				"display"  : false,
+				"outbid"   : false /* display 'outbid' message */
+			}
+		};
+
+		obj.next_bid = obj.current_price + obj.minimum_bid;
+		if (obj.minimum_bid == 0) {
+			obj.next_bid++;
+		}
+
+		return obj;
+	},
+
+	getListings : function(queryString) {
+
+		var answer = {
+			"list" : [],
+			"count" : 0
+		};
+		var listingGr = new GlideRecord(Constants.LISTING_TABLE);
+		if (queryString) {
+			listingGr.addEncodedQuery(queryString);
+		}
+		listingGr.orderBy('name');
+		listingGr.query();
+
+		while (listingGr.next()) {
+			answer.list.push(this.makeListingObj(listingGr.getUniqueValue()));
+		}
+		answer.count = answer.list.length;
+
+		return answer;
+
+	},
+
+	type: 'Listing'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>chuck.tomasi</sys_created_by>
+        <sys_created_on>2021-08-20 14:16:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d2e00d561b8a78109301ddf6b04bcb1f</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Listing</sys_name>
+        <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
+        <sys_update_name>sys_script_include_d2e00d561b8a78109301ddf6b04bcb1f</sys_update_name>
+        <sys_updated_by>chuck.tomasi</sys_updated_by>
+        <sys_updated_on>2021-08-31 21:51:29</sys_updated_on>
+    </sys_script_include>
+</record_update>

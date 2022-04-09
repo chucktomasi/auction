@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>POST</http_method>
+        <name>bid</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    var userID = request.body.data.userID;
+	var listingID = request.body.data.listingID;
+	var amount = parseInt(request.body.data.amount);
+	var answer = {
+		msg : "",
+		status : 400
+	};
+	
+	var bidObj = new Bid().makeBid({
+		"userID" : userID,
+		"listingID" : listingID,
+		"amount" : amount
+	});
+	
+	answer.msg = bidObj.msg;
+	
+	if (bidObj.status == Constants.BID_OK) {
+		answer.status = 200;
+	}
+	
+	response.setBody({"answer" : answer});
+	response.setStatus(answer.status);
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_snc_auction/auction/bid</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/bid</relative_path>
+        <request_example/>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>chuck.tomasi</sys_created_by>
+        <sys_created_on>2021-08-20 13:42:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>88f8b4521b8a78109301ddf6b04bcbeb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>bid</sys_name>
+        <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
+        <sys_update_name>sys_ws_operation_88f8b4521b8a78109301ddf6b04bcbeb</sys_update_name>
+        <sys_updated_by>chuck.tomasi</sys_updated_by>
+        <sys_updated_on>2021-08-20 16:17:39</sys_updated_on>
+        <web_service_definition display_value="Auction">01d874521b8a78109301ddf6b04bcb44</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
