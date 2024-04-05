@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Bid" max_length="40" name="x_snc_auction_bid" sizeclass="1" type="collection">
+    <element db_object_id="a45ee0cb3b99c21037fb94fa16e45a26" label="Bid" max_length="40" name="x_snc_auction_bid" type="collection">
         <element default="0" label="Bid" max_length="40" name="bid" type="integer"/>
         <element attributes="encode_utf8=false" label="Bidder" max_length="32" name="bidder" reference="sys_user" type="reference"/>
         <element attributes="encode_utf8=false" label="Listing" max_length="32" name="listing" reference="x_snc_auction_listing" type="reference"/>

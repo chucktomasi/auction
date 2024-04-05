@@ -2,11 +2,13 @@
     <sc_cat_item action="INSERT_OR_UPDATE">
         <access_type>restricted</access_type>
         <active>true</active>
+        <additional_review>false</additional_review>
         <availability>on_desktop</availability>
         <billable>false</billable>
         <category/>
         <checked_out/>
         <cost>0</cost>
+        <create_universal_request>false</create_universal_request>
         <custom_cart/>
         <delivery_plan/>
         <delivery_plan_script/>
@@ -63,13 +65,11 @@
         <sys_class_name>sc_cat_item</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-08-19 19:35:37</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>e532cdc21b8278109301ddf6b04bcb57</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Auction item</sys_name>
         <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name>sc_cat_item_e532cdc21b8278109301ddf6b04bcb57</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
@@ -80,6 +80,7 @@
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
+        <version/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>

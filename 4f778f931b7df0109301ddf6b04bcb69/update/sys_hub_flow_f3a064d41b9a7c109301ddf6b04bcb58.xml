@@ -4,9 +4,9 @@
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build>glide-rome-06-23-2021__patch4-hotfix1b-01-19-2022_02-08-2022_1831.zip</compiler_build>
         <copied_from/>
         <copied_from_name/>
         <description>If the base changes and the current price is 0, set the current price to the base price</description>
@@ -16,6 +16,7 @@
         <name>Set initial current price</name>
         <natlang/>
         <outputs/>
+        <pre_compiled>false</pre_compiled>
         <remote_trigger_id>18212cd41b9a7c109301ddf6b04bcbce</remote_trigger_id>
         <run_as>user</run_as>
         <run_with_roles/>
@@ -26,21 +27,21 @@
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-26 16:54:28</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>f3a064d41b9a7c109301ddf6b04bcb58</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Set initial current price</sys_name>
         <sys_overrides/>
         <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name>sys_hub_flow_f3a064d41b9a7c109301ddf6b04bcb58</sys_update_name>
-        <sys_updated_by>chuck.tomasi</sys_updated_by>
-        <sys_updated_on>2022-03-09 18:15:16</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-05 18:50:36</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=f3a064d41b9a7c109301ddf6b04bcb58"/>
     <sys_variable_value action="delete_multiple" query="document_key=f3a064d41b9a7c109301ddf6b04bcb58"/>
     <sys_flow_record_trigger action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -59,17 +60,12 @@
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-26 16:56:24</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>18212cd41b9a7c109301ddf6b04bcbce</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
         <sys_overrides/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
-        <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
         <sys_updated_on>2021-08-26 16:56:24</sys_updated_on>
         <table>x_snc_auction_listing</table>
@@ -106,18 +102,11 @@
         <flow display_value="Set initial current price">f3a064d41b9a7c109301ddf6b04bcb58</flow>
         <name>Created or Updated</name>
         <remote_sys_id/>
-        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-26 16:55:29</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>36e068d41b9a7c109301ddf6b04bcb42</sys_id>
         <sys_mod_count>3</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope/>
-        <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
         <sys_updated_on>2021-08-26 16:56:25</sys_updated_on>
         <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
@@ -174,23 +163,39 @@
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>f3a064d41b9a7c109301ddf6b04bcb58</id>
         <name>Set initial current price</name>
-        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-26 16:54:28</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>bba064d41b9a7c109301ddf6b04bcb5a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope/>
-        <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
         <sys_updated_on>2021-08-26 16:54:28</sys_updated_on>
     </sys_flow_cat_variable_model>
     <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=bba064d41b9a7c109301ddf6b04bcb5a"/>
     <sys_hub_flow_input action="delete_multiple" query="model=f3a064d41b9a7c109301ddf6b04bcb58^sys_idNOT IN7ae068d41b9a7c109301ddf6b04bcb34,bae068d41b9a7c109301ddf6b04bcb3a,e6e068d41b9a7c109301ddf6b04bcb2d"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD10212cd4359a7c10c0377d5c64b129d9</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>4f778f931b7df0109301ddf6b04bcb69</scope_name>
+        <serialized_content>{"FlowDesigner:FD10212cd4359a7c10c0377d5c64b129d9":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD10212cd4359a7c10c0377d5c64b129d9\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD10212cd4359a7c10c0377d5c64b129d9.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD10212cd4359a7c10c0377d5c64b129d9\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>chuck.tomasi</sys_created_by>
+        <sys_created_on>2021-08-26 16:56:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d0212cd41b9a7c109301ddf6b04bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chuck.tomasi</sys_updated_by>
+        <sys_updated_on>2021-08-26 16:56:25</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -222,6 +227,7 @@
         <element>changed_fields</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -252,13 +258,11 @@
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-26 16:55:29</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>7ae068d41b9a7c109301ddf6b04bcb34</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
@@ -270,10 +274,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7ae068d41b9a7c109301ddf6b04bcb34"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -305,6 +311,7 @@
         <element>table_name</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -335,13 +342,11 @@
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-26 16:55:29</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>bae068d41b9a7c109301ddf6b04bcb3a</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
@@ -353,10 +358,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bae068d41b9a7c109301ddf6b04bcb3a"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -388,6 +395,7 @@
         <element>current</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -418,13 +426,11 @@
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-26 16:55:29</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>e6e068d41b9a7c109301ddf6b04bcb2d</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
@@ -436,10 +442,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e6e068d41b9a7c109301ddf6b04bcb2d"/>
     <sys_hub_flow_output action="delete_multiple" query="model=f3a064d41b9a7c109301ddf6b04bcb58"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=f3a064d41b9a7c109301ddf6b04bcb58"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=f3a064d41b9a7c109301ddf6b04bcb58^sys_idNOT INfee068d41b9a7c109301ddf6b04bcb48"/>
@@ -448,8 +456,8 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="Set initial current price">f3a064d41b9a7c109301ddf6b04bcb58</flow>
         <order>1</order>
@@ -457,17 +465,11 @@
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-26 16:55:29</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>fee068d41b9a7c109301ddf6b04bcb48</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>chuck.tomasi</sys_updated_by>
-        <sys_updated_on>2022-03-09 18:32:58</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-05 18:52:53</sys_updated_on>
         <ui_id>833d5d34-3f31-4918-b70f-eb24b8851c54</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fee068d41b9a7c109301ddf6b04bcb48"/>
@@ -540,13 +542,11 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-26 16:55:29</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>32e068d41b9a7c109301ddf6b04bcb3f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Table Name</sys_name>
         <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_f3a064d41b9a7c109301ddf6b04bcb58_table_name_en</sys_update_name>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
@@ -565,13 +565,11 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-26 16:55:29</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>36e068d41b9a7c109301ddf6b04bcb39</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Changed Fields</sys_name>
         <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_f3a064d41b9a7c109301ddf6b04bcb58_changed_fields_en</sys_update_name>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
@@ -590,13 +588,11 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-26 16:55:29</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>b2e068d41b9a7c109301ddf6b04bcb33</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Record</sys_name>
         <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_f3a064d41b9a7c109301ddf6b04bcb58_current_en</sys_update_name>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
@@ -607,36 +603,12 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_f3a064d41b9a7c109301ddf6b04bcb58"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_f3a064d41b9a7c109301ddf6b04bcb58"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_f3a064d41b9a7c109301ddf6b04bcb58"/>
-    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=f3a064d41b9a7c109301ddf6b04bcb58^sys_idNOT IN94212cd41b9a7c109301ddf6b04bcbd0"/>
-    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
-        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
-        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"94212cd41b9a7c109301ddf6b04bcbd0","name":"plan","plan_signature":null}}</plan>
-        <plan_id>f3a064d41b9a7c109301ddf6b04bcb58</plan_id>
-        <snapshot>c445c5431b8681502e4d4156bc4bcb28</snapshot>
-        <sys_class_name>sys_flow_trigger_plan</sys_class_name>
-        <sys_created_by>chuck.tomasi</sys_created_by>
-        <sys_created_on>2021-08-26 16:56:24</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
-        <sys_domain>global</sys_domain>
-        <sys_id>94212cd41b9a7c109301ddf6b04bcbd0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_overrides/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope/>
-        <sys_update_name/>
-        <sys_updated_by>chuck.tomasi</sys_updated_by>
-        <sys_updated_on>2021-08-26 16:56:24</sys_updated_on>
-        <trigger display_value="">18212cd41b9a7c109301ddf6b04bcbce</trigger>
-    </sys_flow_trigger_plan>
-    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=f3a064d41b9a7c109301ddf6b04bcb58"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
@@ -657,21 +629,21 @@
         <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-26 16:56:23</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>c8212cd41b9a7c109301ddf6b04bcb81</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
         <sys_updated_on>2021-08-26 16:56:23</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=c8212cd41b9a7c109301ddf6b04bcb81"/>
     <sys_variable_value action="delete_multiple" query="document_key=c8212cd41b9a7c109301ddf6b04bcb81"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=c8212cd41b9a7c109301ddf6b04bcb81^sys_idNOT IN0c212cd41b9a7c109301ddf6b04bcbbe"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
@@ -680,18 +652,11 @@
         <flow display_value="Set initial current price">c8212cd41b9a7c109301ddf6b04bcb81</flow>
         <name>Created or Updated</name>
         <remote_sys_id/>
-        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-26 16:56:24</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>0c212cd41b9a7c109301ddf6b04bcbbe</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope/>
-        <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
         <sys_updated_on>2021-08-26 16:56:25</sys_updated_on>
         <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
@@ -748,23 +713,39 @@
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>c8212cd41b9a7c109301ddf6b04bcb81</id>
         <name>Set initial current price</name>
-        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-26 16:56:23</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>80212cd41b9a7c109301ddf6b04bcb82</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope/>
-        <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
         <sys_updated_on>2021-08-26 16:56:23</sys_updated_on>
     </sys_flow_cat_variable_model>
     <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=80212cd41b9a7c109301ddf6b04bcb82"/>
     <sys_hub_flow_input action="delete_multiple" query="model=c8212cd41b9a7c109301ddf6b04bcb81^sys_idNOT IN0c212cd41b9a7c109301ddf6b04bcb93,40212cd41b9a7c109301ddf6b04bcb85,44212cd41b9a7c109301ddf6b04bcb9e"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD8c212cd4cf9a7c10c0d0d243f98bf382</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>4f778f931b7df0109301ddf6b04bcb69</scope_name>
+        <serialized_content>{"FlowDesigner:FD8c212cd4cf9a7c10c0d0d243f98bf382":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD8c212cd4cf9a7c10c0d0d243f98bf382\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD8c212cd4cf9a7c10c0d0d243f98bf382.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD8c212cd4cf9a7c10c0d0d243f98bf382\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>chuck.tomasi</sys_created_by>
+        <sys_created_on>2021-08-26 16:56:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>40212cd41b9a7c109301ddf6b04bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>chuck.tomasi</sys_updated_by>
+        <sys_updated_on>2021-08-26 16:56:23</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -796,6 +777,7 @@
         <element>changed_fields</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -826,13 +808,11 @@
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-26 16:56:24</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>0c212cd41b9a7c109301ddf6b04bcb93</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
@@ -844,10 +824,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0c212cd41b9a7c109301ddf6b04bcb93"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -879,6 +861,7 @@
         <element>current</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -909,13 +892,11 @@
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-26 16:56:23</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>40212cd41b9a7c109301ddf6b04bcb85</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
@@ -927,10 +908,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=40212cd41b9a7c109301ddf6b04bcb85"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -962,6 +945,7 @@
         <element>table_name</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -992,13 +976,11 @@
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-26 16:56:24</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>44212cd41b9a7c109301ddf6b04bcb9e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
@@ -1010,10 +992,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=44212cd41b9a7c109301ddf6b04bcb9e"/>
     <sys_hub_flow_output action="delete_multiple" query="model=c8212cd41b9a7c109301ddf6b04bcb81"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=c8212cd41b9a7c109301ddf6b04bcb81"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=c8212cd41b9a7c109301ddf6b04bcb81^sys_idNOT INcc212cd41b9a7c109301ddf6b04bcbbc"/>
@@ -1022,8 +1006,8 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
         <comment/>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="Set initial current price">c8212cd41b9a7c109301ddf6b04bcb81</flow>
         <order>1</order>
@@ -1031,15 +1015,9 @@
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-26 16:56:24</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>cc212cd41b9a7c109301ddf6b04bcbbc</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
-        <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
         <sys_updated_on>2021-08-26 16:56:24</sys_updated_on>
         <ui_id>833d5d34-3f31-4918-b70f-eb24b8851c54</ui_id>
@@ -1114,13 +1092,11 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-26 16:56:24</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>0c212cd41b9a7c109301ddf6b04bcb8f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Record</sys_name>
         <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_c8212cd41b9a7c109301ddf6b04bcb81_current_en</sys_update_name>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
@@ -1139,13 +1115,11 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-26 16:56:24</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>44212cd41b9a7c109301ddf6b04bcb9a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Changed Fields</sys_name>
         <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_c8212cd41b9a7c109301ddf6b04bcb81_changed_fields_en</sys_update_name>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
@@ -1164,13 +1138,11 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-26 16:56:24</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>88212cd41b9a7c109301ddf6b04bcba4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Table Name</sys_name>
         <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_c8212cd41b9a7c109301ddf6b04bcb81_table_name_en</sys_update_name>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
@@ -1181,8 +1153,28 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c8212cd41b9a7c109301ddf6b04bcb81"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_c8212cd41b9a7c109301ddf6b04bcb81"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c8212cd41b9a7c109301ddf6b04bcb81"/>
-    <sys_hub_flow action="update">
+    <sys_hub_flow action="UPDATE">
         <sys_id>f3a064d41b9a7c109301ddf6b04bcb58</sys_id>
         <latest_snapshot>c8212cd41b9a7c109301ddf6b04bcb81</latest_snapshot>
+        <compiler_build>glide-vancouver-07-06-2023__patch8-03-05-2024_03-14-2024_0941.zip</compiler_build>
     </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=f3a064d41b9a7c109301ddf6b04bcb58^sys_idNOT IN94212cd41b9a7c109301ddf6b04bcbd0"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"94212cd41b9a7c109301ddf6b04bcbd0","name":"plan","plan_signature":null}}</plan>
+        <plan_id>f3a064d41b9a7c109301ddf6b04bcb58</plan_id>
+        <snapshot>daee204f3b99c21037fb94fa16e45a1d</snapshot>
+        <sys_created_by>chuck.tomasi</sys_created_by>
+        <sys_created_on>2021-08-26 16:56:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>94212cd41b9a7c109301ddf6b04bcbd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>chuck.tomasi</sys_updated_by>
+        <sys_updated_on>2021-08-26 16:56:24</sys_updated_on>
+        <trigger display_value="">18212cd41b9a7c109301ddf6b04bcbce</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=f3a064d41b9a7c109301ddf6b04bcb58"/>
 </record_update>

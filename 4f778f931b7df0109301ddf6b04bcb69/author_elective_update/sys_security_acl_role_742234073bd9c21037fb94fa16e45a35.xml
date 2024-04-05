@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-05 19:07:00</sys_created_on>
+        <sys_id>742234073bd9c21037fb94fa16e45a35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.public</sys_name>
+        <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
+        <sys_security_acl display_value="">fc2234073bd9c21037fb94fa16e45a34</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_742234073bd9c21037fb94fa16e45a35</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-05 19:07:00</sys_updated_on>
+        <sys_user_role display_value="public" name="public">b0593b350a0a0aa7001d689e4542dc28</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</application>
+        <file_path/>
+        <instance_id>0187301d1b154ed0a43dcb7b234bcbc1</instance_id>
+        <instance_name>snbestbuddies</instance_name>
+        <name>sys_security_acl_role_742234073bd9c21037fb94fa16e45a35</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-04-05 19:07:00</sys_created_on><sys_id>742234073bd9c21037fb94fa16e45a35</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.public</sys_name><sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package><sys_policy/><sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope><sys_security_acl display_value="">fc2234073bd9c21037fb94fa16e45a34</sys_security_acl><sys_update_name>sys_security_acl_role_742234073bd9c21037fb94fa16e45a35</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-04-05 19:07:00</sys_updated_on><sys_user_role display_value="public" name="public">b0593b350a0a0aa7001d689e4542dc28</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-2048398770</payload_hash>
+        <record_name>.public</record_name>
+        <reverted_from/>
+        <source>9d7e640b3b99c21037fb94fa16e45a28</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-05 19:07:00</sys_created_on>
+        <sys_id>012234073bd9c21037fb94fa16e45a39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18eafa836020000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-05 19:07:00</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>05223407eed9c2103739579722e05038</update_guid>
+        <update_guid_history>05223407eed9c2103739579722e05038:-2048398770</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value=".public">a23274073bd9c21037fb94fa16e45a99</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-05 19:07:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>0a29c634e0a746a0a625ce6785e37981</sys_id>
+        <sys_metadata>742234073bd9c21037fb94fa16e45a35</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.public</sys_name>
+        <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
+        <sys_parent display_value="x_snc_auction_bid">fc2234073bd9c21037fb94fa16e45a34</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
+        <sys_scope_delete display_value="">c29b1670a00c484d93c5e1da610f9db1</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_742234073bd9c21037fb94fa16e45a35</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_742234073bd9c21037fb94fa16e45a35">012234073bd9c21037fb94fa16e45a39</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-05 19:07:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

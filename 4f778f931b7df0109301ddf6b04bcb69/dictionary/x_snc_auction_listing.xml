@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Listing" max_length="40" name="x_snc_auction_listing" sizeclass="4" type="collection">
+    <element db_object_id="c95ee0cb3b99c21037fb94fa16e45adb" label="Listing" max_length="40" name="x_snc_auction_listing" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element attributes="encode_utf8=false" label="Auction Item Owner" max_length="32" name="auction_owner" reference="sys_user" type="reference"/>
         <element default="0" label="Base price" max_length="40" name="base_price" type="integer"/>
@@ -12,13 +12,13 @@
         <element attributes="edge_encryption_enabled=true" display="true" label="Name" max_length="90" name="name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Company Providing the Item" max_length="40" name="provided_by" type="string"/>
         <index name="index">
-            <element name="highest_bidder"/>
-        </index>
-        <index name="index2">
             <element name="auction_owner"/>
         </index>
-        <index name="index3">
+        <index name="index2">
             <element name="event"/>
+        </index>
+        <index name="index3">
+            <element name="highest_bidder"/>
         </index>
     </element>
 </database>

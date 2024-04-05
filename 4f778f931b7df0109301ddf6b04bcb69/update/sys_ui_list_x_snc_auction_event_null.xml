@@ -58,7 +58,6 @@
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>chuck.tomasi</sys_created_by>
             <sys_created_on>2021-08-20 15:16:08</sys_created_on>
-            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>78a0d1de1b8a78109301ddf6b04bcbb3</sys_id>
@@ -66,7 +65,6 @@
             <sys_name>x_snc_auction_event</sys_name>
             <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
             <sys_policy/>
-            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
             <sys_update_name>sys_ui_list_x_snc_auction_event_null</sys_update_name>
             <sys_updated_by>chuck.tomasi</sys_updated_by>

@@ -4,9 +4,9 @@
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build>glide-rome-06-23-2021__patch4-hotfix1b-01-19-2022_02-08-2022_1831.zip</compiler_build>
         <copied_from/>
         <copied_from_name/>
         <description/>
@@ -16,6 +16,7 @@
         <name>Update listing with new bid</name>
         <natlang/>
         <outputs/>
+        <pre_compiled>false</pre_compiled>
         <remote_trigger_id>169901da1b8a78109301ddf6b04bcb9c</remote_trigger_id>
         <run_as>system</run_as>
         <run_with_roles/>
@@ -26,21 +27,21 @@
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-20 14:42:21</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>0ae8c59a1b8a78109301ddf6b04bcb10</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Update listing with new bid</sys_name>
         <sys_overrides/>
         <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name>sys_hub_flow_0ae8c59a1b8a78109301ddf6b04bcb10</sys_update_name>
-        <sys_updated_by>chuck.tomasi</sys_updated_by>
-        <sys_updated_on>2022-03-09 18:15:14</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-05 18:50:34</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=0ae8c59a1b8a78109301ddf6b04bcb10"/>
     <sys_variable_value action="delete_multiple" query="document_key=0ae8c59a1b8a78109301ddf6b04bcb10"/>
     <sys_flow_record_trigger action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -58,17 +59,12 @@
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-20 14:45:22</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>169901da1b8a78109301ddf6b04bcb9c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
         <sys_overrides/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
-        <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
         <sys_updated_on>2021-08-20 14:45:22</sys_updated_on>
         <table>x_snc_auction_bid</table>
@@ -105,18 +101,11 @@
         <flow display_value="Update listing with new bid">0ae8c59a1b8a78109301ddf6b04bcb10</flow>
         <name>Created</name>
         <remote_sys_id/>
-        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-20 14:44:43</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>3c794d9a1b8a78109301ddf6b04bcb12</sys_id>
         <sys_mod_count>4</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope/>
-        <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
         <sys_updated_on>2021-09-09 16:14:46</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
@@ -158,18 +147,11 @@
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>0ae8c59a1b8a78109301ddf6b04bcb10</id>
         <name>Update listing with new bid</name>
-        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-20 14:42:21</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>0ee8c59a1b8a78109301ddf6b04bcb12</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope/>
-        <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
         <sys_updated_on>2021-08-20 14:42:21</sys_updated_on>
     </sys_flow_cat_variable_model>
@@ -206,6 +188,7 @@
         <element>current</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -236,13 +219,11 @@
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-20 14:44:43</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>28790d9a1b8a78109301ddf6b04bcbeb</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
@@ -254,10 +235,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=28790d9a1b8a78109301ddf6b04bcbeb"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -289,6 +272,7 @@
         <element>table_name</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -319,13 +303,11 @@
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-20 14:44:43</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>3c790d9a1b8a78109301ddf6b04bcbf2</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
@@ -337,10 +319,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3c790d9a1b8a78109301ddf6b04bcbf2"/>
     <sys_hub_flow_output action="delete_multiple" query="model=0ae8c59a1b8a78109301ddf6b04bcb10"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=0ae8c59a1b8a78109301ddf6b04bcb10"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=0ae8c59a1b8a78109301ddf6b04bcb10^sys_idNOT IN34794d9a1b8a78109301ddf6b04bcb19"/>
@@ -349,8 +333,8 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="Update listing with new bid">0ae8c59a1b8a78109301ddf6b04bcb10</flow>
         <order>1</order>
@@ -358,17 +342,11 @@
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-20 14:44:43</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>34794d9a1b8a78109301ddf6b04bcb19</sys_id>
-        <sys_mod_count>12</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-03-09 18:34:38</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-05 18:58:50</sys_updated_on>
         <ui_id>7dd67242-7537-4314-b8f3-3a3482374dbf</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=34794d9a1b8a78109301ddf6b04bcb19"/>
@@ -441,13 +419,11 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-20 14:44:43</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>74790d9a1b8a78109301ddf6b04bcbf1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Record</sys_name>
         <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_0ae8c59a1b8a78109301ddf6b04bcb10_current_en</sys_update_name>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
@@ -466,13 +442,11 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-20 14:44:43</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>f0790d9a1b8a78109301ddf6b04bcbf7</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Table Name</sys_name>
         <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_0ae8c59a1b8a78109301ddf6b04bcb10_table_name_en</sys_update_name>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
@@ -483,36 +457,12 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_0ae8c59a1b8a78109301ddf6b04bcb10"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_0ae8c59a1b8a78109301ddf6b04bcb10"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_0ae8c59a1b8a78109301ddf6b04bcb10"/>
-    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=0ae8c59a1b8a78109301ddf6b04bcb10^sys_idNOT IN929901da1b8a78109301ddf6b04bcb9e"/>
-    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
-        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
-        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"929901da1b8a78109301ddf6b04bcb9e","name":"plan","plan_signature":null}}</plan>
-        <plan_id>0ae8c59a1b8a78109301ddf6b04bcb10</plan_id>
-        <snapshot>dca50d431b8681502e4d4156bc4bcb41</snapshot>
-        <sys_class_name>sys_flow_trigger_plan</sys_class_name>
-        <sys_created_by>chuck.tomasi</sys_created_by>
-        <sys_created_on>2021-08-20 14:45:22</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
-        <sys_domain>global</sys_domain>
-        <sys_id>929901da1b8a78109301ddf6b04bcb9e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_overrides/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope/>
-        <sys_update_name/>
-        <sys_updated_by>chuck.tomasi</sys_updated_by>
-        <sys_updated_on>2021-08-20 14:45:22</sys_updated_on>
-        <trigger display_value="">169901da1b8a78109301ddf6b04bcb9c</trigger>
-    </sys_flow_trigger_plan>
-    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=0ae8c59a1b8a78109301ddf6b04bcb10"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
@@ -533,21 +483,21 @@
         <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-20 14:45:22</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>8e9901da1b8a78109301ddf6b04bcb69</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
         <sys_updated_on>2021-08-20 14:45:22</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=8e9901da1b8a78109301ddf6b04bcb69"/>
     <sys_variable_value action="delete_multiple" query="document_key=8e9901da1b8a78109301ddf6b04bcb69"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=8e9901da1b8a78109301ddf6b04bcb69^sys_idNOT IN5e9901da1b8a78109301ddf6b04bcb8d"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
@@ -556,18 +506,11 @@
         <flow display_value="Update listing with new bid">8e9901da1b8a78109301ddf6b04bcb69</flow>
         <name>Created</name>
         <remote_sys_id/>
-        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-20 14:45:22</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>5e9901da1b8a78109301ddf6b04bcb8d</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope/>
-        <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
         <sys_updated_on>2021-08-20 14:45:23</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
@@ -609,18 +552,11 @@
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>8e9901da1b8a78109301ddf6b04bcb69</id>
         <name>Update listing with new bid</name>
-        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-20 14:45:22</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>869901da1b8a78109301ddf6b04bcb6a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope/>
-        <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
         <sys_updated_on>2021-08-20 14:45:22</sys_updated_on>
     </sys_flow_cat_variable_model>
@@ -657,6 +593,7 @@
         <element>table_name</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -687,13 +624,11 @@
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-20 14:45:22</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>069901da1b8a78109301ddf6b04bcb7a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
@@ -705,10 +640,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=069901da1b8a78109301ddf6b04bcb7a"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -740,6 +677,7 @@
         <element>current</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -770,13 +708,11 @@
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-20 14:45:22</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>c69901da1b8a78109301ddf6b04bcb6b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
@@ -788,10 +724,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c69901da1b8a78109301ddf6b04bcb6b"/>
     <sys_hub_flow_output action="delete_multiple" query="model=8e9901da1b8a78109301ddf6b04bcb69"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=8e9901da1b8a78109301ddf6b04bcb69"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=8e9901da1b8a78109301ddf6b04bcb69^sys_idNOT IN129901da1b8a78109301ddf6b04bcb8c"/>
@@ -800,8 +738,8 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
         <comment/>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="Update listing with new bid">8e9901da1b8a78109301ddf6b04bcb69</flow>
         <order>1</order>
@@ -809,15 +747,9 @@
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-20 14:45:22</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>129901da1b8a78109301ddf6b04bcb8c</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
-        <sys_update_name/>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
         <sys_updated_on>2021-08-20 14:45:22</sys_updated_on>
         <ui_id>7dd67242-7537-4314-b8f3-3a3482374dbf</ui_id>
@@ -892,13 +824,11 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-20 14:45:22</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>4a9901da1b8a78109301ddf6b04bcb80</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Table Name</sys_name>
         <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_8e9901da1b8a78109301ddf6b04bcb69_table_name_en</sys_update_name>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
@@ -917,13 +847,11 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-20 14:45:22</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>c29901da1b8a78109301ddf6b04bcb76</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Record</sys_name>
         <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_8e9901da1b8a78109301ddf6b04bcb69_current_en</sys_update_name>
         <sys_updated_by>chuck.tomasi</sys_updated_by>
@@ -934,8 +862,28 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_8e9901da1b8a78109301ddf6b04bcb69"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_8e9901da1b8a78109301ddf6b04bcb69"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_8e9901da1b8a78109301ddf6b04bcb69"/>
-    <sys_hub_flow action="update">
+    <sys_hub_flow action="UPDATE">
         <sys_id>0ae8c59a1b8a78109301ddf6b04bcb10</sys_id>
         <latest_snapshot>8e9901da1b8a78109301ddf6b04bcb69</latest_snapshot>
+        <compiler_build>glide-vancouver-07-06-2023__patch8-03-05-2024_03-14-2024_0941.zip</compiler_build>
     </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=0ae8c59a1b8a78109301ddf6b04bcb10^sys_idNOT IN929901da1b8a78109301ddf6b04bcb9e"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"929901da1b8a78109301ddf6b04bcb9e","name":"plan","plan_signature":null}}</plan>
+        <plan_id>0ae8c59a1b8a78109301ddf6b04bcb10</plan_id>
+        <snapshot>9540f0033bd9c21037fb94fa16e45ac2</snapshot>
+        <sys_created_by>chuck.tomasi</sys_created_by>
+        <sys_created_on>2021-08-20 14:45:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>929901da1b8a78109301ddf6b04bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>chuck.tomasi</sys_updated_by>
+        <sys_updated_on>2021-08-20 14:45:22</sys_updated_on>
+        <trigger display_value="">169901da1b8a78109301ddf6b04bcb9c</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=0ae8c59a1b8a78109301ddf6b04bcb10"/>
 </record_update>

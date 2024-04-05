@@ -46,7 +46,6 @@
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-09-09 16:05:21</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
         <sys_id>220c4d594a1a448a84b29da3f04973c9</sys_id>
         <sys_metadata>43bfc59e1b8a78109301ddf6b04bcbbe</sys_metadata>
@@ -55,7 +54,6 @@
         <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
         <sys_parent/>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_scope_delete display_value="">c29b1670a00c484d93c5e1da610f9db1</sys_scope_delete>
         <sys_update_name>sys_security_acl_role_43bfc59e1b8a78109301ddf6b04bcbbe</sys_update_name>

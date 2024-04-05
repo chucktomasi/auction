@@ -17,13 +17,11 @@
         <sys_class_name>sys_ws_definition</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-20 13:32:15</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>01d874521b8a78109301ddf6b04bcb44</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Auction</sys_name>
         <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_update_name>sys_ws_definition_01d874521b8a78109301ddf6b04bcb44</sys_update_name>
         <sys_updated_by>chuck.tomasi</sys_updated_by>

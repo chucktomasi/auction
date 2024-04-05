@@ -108,7 +108,6 @@
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>chuck.tomasi</sys_created_by>
         <sys_created_on>2021-08-20 23:38:27</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_db_object display_value="" name="sys_dictionary">sys_dictionary</sys_db_object>
         <sys_id>16e2a8425a234912904ae287c009ab71</sys_id>
         <sys_metadata>5d72c79a1b8e78109301ddf6b04bcb28</sys_metadata>
@@ -117,7 +116,6 @@
         <sys_package display_value="Auction" source="x_snc_auction">4f778f931b7df0109301ddf6b04bcb69</sys_package>
         <sys_parent display_value="">bbfe019e1b8a78109301ddf6b04bcbc7</sys_parent>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Auction">4f778f931b7df0109301ddf6b04bcb69</sys_scope>
         <sys_scope_delete display_value="">c29b1670a00c484d93c5e1da610f9db1</sys_scope_delete>
         <sys_update_name>sys_dictionary_x_snc_auction_event_blind_auction</sys_update_name>

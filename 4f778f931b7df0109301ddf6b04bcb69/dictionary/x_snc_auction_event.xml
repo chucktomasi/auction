@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Event" max_length="40" name="x_snc_auction_event" sizeclass="1" type="collection">
+    <element db_object_id="785ee0cb3b99c21037fb94fa16e45ab5" label="Event" max_length="40" name="x_snc_auction_event" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Date" max_length="40" name="date" type="glide_date_time"/>
         <element display="true" label="Name" max_length="40" name="name" type="string"/>
